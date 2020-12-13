@@ -42,10 +42,6 @@
 
     <div class="container body-content">
 {% block content %}{% endblock %}
-        <hr/>
-        <footer>
-            <p>&copy; {{ year }} - My Django Application</p>
-        </footer>
     </div>
 
     <!--<script src="{% static 'app/scripts/jquery-1.10.2.js' %}"></script>-->
@@ -76,7 +72,13 @@
                 timer: 4000
             });
 
-    	});
+        });
+        var ad = function (obj) {
+            console.log(obj.prev);
+            console.log(document.getElementById("areaSelectButton"));
+            document.getElementById("areaSelectButton").value = obj.text;
+            document.getElementById("areaSelectButton").innerHTML = obj.text;
+        }
 	</script>
 {% block scripts %}{% endblock %}
 
