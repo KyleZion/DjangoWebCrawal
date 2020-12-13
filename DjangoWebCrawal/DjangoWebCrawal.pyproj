@@ -127,6 +127,7 @@
     <Content Include="app\static\app\scripts\jquery.3.2.1.min.js" />
     <Content Include="app\static\app\scripts\light-bootstrap-dashboard.js" />
     <Content Include="app\templates\app\JobSearch.html" />
+    <Content Include="app\templates\app\JobTable.html" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
     <Content Include="app\static\app\content\bootstrap.css" />

@@ -44,7 +44,7 @@ def about(request):
         }
     )
 
-def about(request):
+def JobSearch(request):
     """Renders the about page."""
     assert isinstance(request, HttpRequest)
     return render(
@@ -53,6 +53,19 @@ def about(request):
         {
             'title':'JobSearch',
             'message':'JobSearch',
+            'year':datetime.now().year,
+        }
+    )
+
+def JobTable(request):
+    """Renders the about page."""
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'app/JobTable.html',
+        {
+            'title':'職缺列表',
+            'message':'職缺列表',
             'year':datetime.now().year,
         }
     )
