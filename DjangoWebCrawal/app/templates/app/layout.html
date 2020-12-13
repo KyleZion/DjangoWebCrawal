@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -8,6 +8,13 @@
     <link rel="stylesheet" type="text/css" href="{% static 'app/content/bootstrap.min.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'app/content/site.css' %}" />
     <script src="{% static 'app/scripts/modernizr-2.6.2.js' %}"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'app/content/animate.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'app/content/light-bootstrap-dashboard.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'app/content/pe-icon-7-stroke.css' %}" />
+
+    <!--     Fonts and icons     -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -26,6 +33,7 @@
                     <li><a href="{% url 'home' %}">Home</a></li>
                     <li><a href="{% url 'about' %}">About</a></li>
                     <li><a href="{% url 'contact' %}">Contact</a></li>
+                    <li><a href="{% url 'JobSearch' %}">JobSearch</a></li>
                 </ul>
                 {% include 'app/loginpartial.html' %}
             </div>
@@ -43,6 +51,33 @@
     <script src="{% static 'app/scripts/jquery-1.10.2.js' %}"></script>
     <script src="{% static 'app/scripts/bootstrap.js' %}"></script>
     <script src="{% static 'app/scripts/respond.js' %}"></script>
+    <script src="{% static 'app/scripts/jquery.3.2.1.min.js' %}"></script>
+    <script src="{% static 'app/scripts/bootstrap.min.js' %}"></script>   
+    <script src="{% static 'app/scripts/chartist.min.js' %}"></script>
+    <script src="{% static 'app/scripts/bootstrap-notify.js' %}"></script>
+    <script src="{% static 'app/scripts/light-bootstrap-dashboard.js' %}"></script>
+    <script src="{% static 'app/scripts/demo.js' %}"></script>
+
+
+    <!--  Google Maps Plugin    -->
+    <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script> -->
+
+	<script type="text/javascript">
+    	$(document).ready(function(){
+
+        	demo.initChartist();
+
+        	$.notify({
+            	icon: 'pe-7s-gift',
+            	message: "Welcome to <b>Light Bootstrap Dashboard</b> - a beautiful freebie for every web developer."
+
+            },{
+                type: 'info',
+                timer: 4000
+            });
+
+    	});
+	</script>
 {% block scripts %}{% endblock %}
 
 </body>
