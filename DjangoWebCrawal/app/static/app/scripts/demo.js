@@ -172,7 +172,7 @@ demo = {
           labels: ['Jan', 'Feb', 'Mar', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
           series: [
             [542, 443, 320, 780, 553, 453, 326, 434, 568, 610, 756, 895],
-            [412, 243, 280, 580, 453, 353, 300, 364, 368, 410, 636, 695]
+            //[412, 243, 280, 580, 453, 353, 300, 364, 368, 410, 636, 695]
           ]
         };
 
@@ -247,7 +247,7 @@ demo = {
 
     	$.notify({
         	icon: "pe-7s-gift",
-        	message: "Welcome to <b>Light Bootstrap Dashboard</b> - a beautiful freebie for every web developer."
+        	message: "this is job search Notify Demo Test"
 
         },{
             type: type[color],
